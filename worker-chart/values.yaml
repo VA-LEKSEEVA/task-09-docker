@@ -1,0 +1,17 @@
+image:
+  repository: worker
+  tag: "0.1"
+  pullPolicy: IfNotPresent
+
+env:
+  INTERVAL: "2"
+
+replicaCount: 1
+
+resources:
+  limits:
+    cpu: 100m
+    memory: 128Mi
+  requests:
+    cpu: 50m
+    memory: 64Mi
